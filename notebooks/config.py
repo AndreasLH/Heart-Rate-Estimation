@@ -1,0 +1,25 @@
+
+haarcascade_url = "https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_alt2.xml"
+eye_cascade_url = "https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_eye.xml"
+# FACE_DATA_DIR = "../data/face_video/"
+# HR_DATA_PATH = "../data/VIPL_hr_csv/"
+HR_DATA_PATH = "../data/hr_data/"
+FACE_DATA_DIR = "../data/"
+TARGET_SIGNAL_DIR = "../data/train/"
+# SAVE_CSV_PATH = "subject_exclusive_folds.csv"
+SAVE_CSV_PATH = "VIPL_npy.csv"
+ST_MAPS_PATH = "../data/st_maps/"
+# ST_MAPS_PATH = "/Volumes/Backup Plus/vision/DEAP_emotion/st_maps/"
+CHECKPOINT_PATH = "../checkpoint"
+DATA_PATH = "../data/"
+PLOT_PATH = "../plots"
+BATCH_SIZE = 1
+EPOCHS = 1
+EPOCHS_TEST = 1
+CLIP_SIZE = 300
+lr = 1e-3
+IMAGE_WIDTH = 300
+IMAGE_HEIGHT = 75
+NUM_WORKERS = 0
+DEVICE = "cpu"
+GRU_TEMPORAL_WINDOW = 6

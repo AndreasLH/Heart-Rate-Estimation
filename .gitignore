@@ -1,5 +1,10 @@
 checkpoint/
 data/
+cpi/
+runs/
+*.csv
+*.png
+*.xml
 
 
 # Byte-compiled / optimized / DLL files
