@@ -5,6 +5,7 @@ runs/
 *.csv
 *.png
 *.xml
+*.mp4
 
 
 # Byte-compiled / optimized / DLL files
