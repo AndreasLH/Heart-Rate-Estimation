@@ -5,7 +5,7 @@ import numpy as np
 from utils.model_utils import save_model_checkpoint
 
 
-def train_fn(model, data_loader, optimizer, loss_fn):
+def train_fn(model, data_loader, optimizer, loss_fn, batch_size=2):
     model.train()
     fin_loss = 0
     loss = 0.0
@@ -36,10 +36,10 @@ def train_fn(model, data_loader, optimizer, loss_fn):
             predicted_hr_list.append(outputs.squeeze(0).mean().item())
             fin_loss += loss.item()
 
-    return target_hr_list, predicted_hr_list, fin_loss / (len(data_loader)*config.BATCH_SIZE)
+    return target_hr_list, predicted_hr_list, fin_loss / (len(data_loader)*batch_size)
 
 
-def eval_fn(model, data_loader, loss_fn):
+def eval_fn(model, data_loader, loss_fn, batch_size=2):
     model.eval()
     fin_loss = 0
     target_hr_list = []
@@ -64,4 +64,4 @@ def eval_fn(model, data_loader, loss_fn):
                 # predicted_hr_batch = list(outputs.squeeze(2).mean(dim=1, keepdim=True).squeeze(1).detach().cpu().numpy())
                 predicted_hr_list.append(outputs.squeeze(0).mean().item())
 
-        return target_hr_list, predicted_hr_list, fin_loss / (len(data_loader)*config.BATCH_SIZE)
+        return target_hr_list, predicted_hr_list, fin_loss / (len(data_loader)*batch_size)

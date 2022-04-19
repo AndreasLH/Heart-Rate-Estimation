@@ -125,8 +125,8 @@ def get_spatio_temporal_map_threaded(file, save_path:str, clip_size:int=300):
     if maps is None:
         return 1
 
-    file_name = file.split('/')[-1].split('.')[0]
-    folder_name = file.split('/')[-2]
+    file_name = file.split(os.sep)[-1].split('.')[0]
+    folder_name = file.split(os.sep)[-2]
     save_path = os.path.join("../data/st_maps/", folder_name)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
