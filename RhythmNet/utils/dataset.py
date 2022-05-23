@@ -4,7 +4,6 @@ import numpy as np
 from PIL import Image
 from PIL import ImageFile
 from torch.utils.data import Dataset
-from utils.signal_utils import get_hr_data
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
