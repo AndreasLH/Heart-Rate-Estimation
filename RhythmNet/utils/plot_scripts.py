@@ -50,7 +50,7 @@ def gt_vs_est(data1, data2, plot_path=None, tb=False):
 
     else:
         # plt.show()
-        fig.savefig(plot_path + f'/true_vs_est.png', dpi=fig.dpi)
+        fig.savefig(plot_path + f'/true_vs_est.pdf')
 
 
 def bland_altman_plot(data1, data2, plot_path=None, tb=False):
@@ -75,7 +75,7 @@ def bland_altman_plot(data1, data2, plot_path=None, tb=False):
 
     else:
         # plt.show()
-        fig.savefig(plot_path + f'/bland-altman_new.png', dpi=fig.dpi)
+        fig.savefig(plot_path + f'/bland-altman_new.pdf')
 
 
 def create_plot_for_tensorboard(plot_name, data1, data2):
