@@ -4,8 +4,15 @@ import numpy as np
 from PIL import Image
 from PIL import ImageFile
 from torch.utils.data import Dataset
+import pandas as pd
+import config
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
+
+def get_hr_data(file_name):
+    hr_df = pd.read_csv(config.HR_DATA_PATH + f"{file_name}.csv")
+
+    return hr_df["bpm"].values
 
 
 class DataLoaderRhythmNet(Dataset):

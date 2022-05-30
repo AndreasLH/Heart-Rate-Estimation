@@ -66,6 +66,8 @@ def bland_altman_plot(data1, data2, plot_path=None, tb=False):
     plt.axhline(md, color='gray', linestyle='--')
     plt.axhline(md + 1.96 * sd, color='gray', linestyle='--')
     plt.axhline(md - 1.96 * sd, color='gray', linestyle='--')
+    plt.xlabel(r'$\frac{1}{2}(HR_{gt}-HR_{est})$')
+    plt.ylabel(r'$HR_{gt}-HR_{est}$')
 
     if tb:
         buf = io.BytesIO()
