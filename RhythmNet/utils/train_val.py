@@ -41,7 +41,8 @@ def train_fn(model, data_loader, optimizer, loss_fn, batch_size=2):
 
 def eval_fn(model, data_loader, loss_fn, batch_size=2):
     model.eval()
-    fin_loss = 0
+    fin_loss = 0    
+    loss = 0.0
     target_hr_list = []
     predicted_hr_list = []
     with torch.no_grad():
