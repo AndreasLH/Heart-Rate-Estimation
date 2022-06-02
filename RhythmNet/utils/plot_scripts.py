@@ -8,6 +8,8 @@ import config as config
 import matplotlib.pyplot as plt
 
 
+'''This file is sort of deprecated'''
+
 def plot_train_test_curves(train_loss_data, test_loss_data, plot_path, fold_tag=1):
     if not os.path.exists(plot_path):
         os.makedirs(plot_path)
@@ -32,9 +34,10 @@ def gt_vs_est(data1, data2, plot_path=None, tb=False):
     # diff = data1 - data2                   # Difference between data1 and data2
     # md = np.mean(diff)                   # Mean of the difference
     # sd = np.std(diff, axis=0)            # Standard deviation of the difference
-
+    
     fig = plt.figure()
     plt.scatter(data1, data2)
+    plt.plot(range(np.min(data1),np.max(data1)),range(np.min(data1),np.max(data1)),'-')
     plt.title('true labels vs estimated')
     plt.ylabel('estimated HR')
     plt.xlabel('true HR')
