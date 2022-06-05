@@ -1,3 +1,6 @@
+# For Generating the spatial temporal maps
+# this scripts is heavily multi threaded, it benefits greatly from a lot of cores
+
 from utils import video2st_maps as v2m
 import glob
 

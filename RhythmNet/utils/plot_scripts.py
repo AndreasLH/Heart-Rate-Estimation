@@ -8,7 +8,7 @@ import config as config
 import matplotlib.pyplot as plt
 
 
-'''This file is sort of deprecated'''
+'''This file is sort of deprecated, at least gt_vs_est and bland_altman_plot are used in modified form somewhere else'''
 
 def plot_train_test_curves(train_loss_data, test_loss_data, plot_path, fold_tag=1):
     if not os.path.exists(plot_path):
