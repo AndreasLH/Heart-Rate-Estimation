@@ -15,7 +15,7 @@ Quick links to the notebooks
 - [ICA_evaluation.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/ICA_evaluation.ipynb)
 - [RhythmNet training](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/RhythmNet/train.ipynb)
 
-- [Samples of modified videos](https://drive.google.com/drive/folders/1XFiRorYi2KYkomA9VEbjXJshq_uuz7g0?usp=sharing)
+- [Samples of modified videos](https://drive.google.com/drive/folders/1XFiRorYi2KYkomA9VEbjXJshq_uuz7g0?usp=sharing) (roughly the videos in notebooks/videos)
 
 data is available [here](https://github.com/partofthestars/LGI-PPGI-DB)
 
@@ -33,6 +33,7 @@ Due to storage limitations, datafiles are not included on in the repo, but they 
 │   ├───test
 │   └───train
 ├───notebooks
+│   ├───videos
 │   ├───x
 └───RhythmNet
     ├───x
