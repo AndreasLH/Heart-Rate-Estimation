@@ -1,6 +1,6 @@
 Code for my B.Sc. project "heart rate estimation in videos of faces"
 
-Much of the code is structured in jupyter notebooks the main notebooks are
+Much of the code is structured in jupyter notebooks everything related to the ICA method in contained in the notebooks folder while the RhythmNet folder contains everything related to the RhythmNet model, the main notebooks are. 
 ```
 ├───notebooks
 │   ├───regression_ica.ipynb
@@ -8,6 +8,14 @@ Much of the code is structured in jupyter notebooks the main notebooks are
 └───RhythmNet
     ├───train.ipynb
 ```
+
+Quick links to the notebooks
+
+- [regression_ica.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/regression_ica.ipynb)
+- [ICA_evaluation.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/ICA_evaluation.ipynb)
+- [RhythmNet training](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/RhythmNet/train.ipynb)
+
+- [Samples of modified videos](https://drive.google.com/drive/folders/1XFiRorYi2KYkomA9VEbjXJshq_uuz7g0?usp=sharing)
 
 data is available [here](https://github.com/partofthestars/LGI-PPGI-DB)
 
