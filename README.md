@@ -11,9 +11,10 @@ Much of the code is structured in jupyter notebooks everything related to the IC
 
 Quick links to the notebooks
 
-- [regression_ica.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/regression_ica.ipynb)
-- [ICA_evaluation.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/ICA_evaluation.ipynb)
-- [RhythmNet training](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/RhythmNet/train.ipynb)
+- [regression_ica.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/regression_ica.ipynb) The heart rate alteration is done in this notebook, much of the method section stems from this notebook
+- [ICA_evaluation.ipynb](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/notebooks/ICA_evaluation.ipynb) This is both for evaluating the heart rate estimation and the quality of the video after alteration. This notebook corresponds to most of the Results section of the report
+- [RhythmNet training](https://nbviewer.org/github/AndreasLH/Heart-Rate-Estimation/blob/main/RhythmNet/train.ipynb)  This is where everything regarding the RhythmNet model happens. All the spatial temporal maps of the videos should be generated with `generate_st_maps.py`
+
 
 - [Samples of modified videos](https://drive.google.com/drive/folders/1XFiRorYi2KYkomA9VEbjXJshq_uuz7g0?usp=sharing) (roughly the videos in notebooks/videos)
 
